@@ -17,7 +17,7 @@ class CreateFormulariosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->text('descripcion')->nullable();
-            $table->text('estado')->default('borrador');
+            $table->string('estado')->default('borrador');
             $table->integer('cantidad_campos')->default(0);
             $table->timestamps();
         });
